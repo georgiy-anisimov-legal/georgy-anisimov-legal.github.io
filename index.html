@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Георгий Анисимов – юрист</title>
-
-  <meta
-    name="description"
-    content="Георгий Анисимов – юрист. Договорная работа, интеллектуальная собственность, фармацевтический и медицинский бизнес, compliance, ВЭД, судебная практика."
-  />
+  <meta name="description" content="Георгий Анисимов – юрист. Договорная работа, интеллектуальная собственность, фармацевтический и медицинский бизнес, compliance, ВЭД, судебная практика." />
 
   <style>
     * {
@@ -34,40 +29,24 @@
       text-decoration: none;
     }
 
-    section {
-      scroll-margin-top: 110px;
-    }
-
     .page {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 18px 20px 56px;
+      padding: 32px 20px 56px;
     }
 
     .nav {
-      position: sticky;
-      top: 14px;
-      z-index: 1000;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 56px;
       gap: 20px;
-      padding: 14px 18px;
-      background: rgba(246, 244, 239, 0.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(229, 224, 214, 0.9);
-      border-radius: 20px;
-      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.06);
     }
 
     .logo {
       font-weight: 700;
       letter-spacing: -0.03em;
       font-size: 18px;
-      color: #111827;
-      white-space: nowrap;
     }
 
     .nav-links {
@@ -123,7 +102,6 @@
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
-      align-items: center;
     }
 
     .button {
@@ -136,8 +114,6 @@
       font-weight: 700;
       border: 1px solid #111827;
       transition: 0.2s ease;
-      cursor: pointer;
-      font-family: inherit;
     }
 
     .button.primary {
@@ -153,48 +129,6 @@
     .button:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 22px rgba(17, 24, 39, 0.12);
-    }
-
-    .contact-dropdown {
-      position: relative;
-      display: inline-flex;
-    }
-
-    .contact-dropdown summary {
-      list-style: none;
-    }
-
-    .contact-dropdown summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .contact-menu {
-      position: absolute;
-      top: calc(100% + 10px);
-      left: 0;
-      min-width: 220px;
-      padding: 10px;
-      background: #ffffff;
-      border: 1px solid #e5e0d6;
-      border-radius: 16px;
-      box-shadow: 0 18px 46px rgba(17, 24, 39, 0.13);
-      z-index: 2000;
-      display: grid;
-      gap: 8px;
-    }
-
-    .contact-menu a {
-      padding: 10px 12px;
-      border-radius: 12px;
-      font-size: 14px;
-      color: #111827;
-      background: #f6f4ef;
-      border: 1px solid #eee8dd;
-      font-weight: 650;
-    }
-
-    .contact-menu a:hover {
-      background: #ebe3d3;
     }
 
     .hero-card {
@@ -377,11 +311,6 @@
       white-space: nowrap;
     }
 
-    .highlight .contact-menu {
-      left: auto;
-      right: 0;
-    }
-
     footer {
       padding-top: 24px;
       border-top: 1px solid #ded7cb;
@@ -399,22 +328,6 @@
     }
 
     @media (max-width: 860px) {
-      .page {
-        padding-top: 10px;
-      }
-
-      .nav {
-        top: 8px;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-bottom: 36px;
-      }
-
-      .nav-links {
-        justify-content: flex-start;
-        gap: 12px;
-      }
-
       .hero {
         grid-template-columns: 1fr;
       }
@@ -432,9 +345,13 @@
         grid-template-columns: 1fr;
       }
 
-      .highlight .contact-menu {
-        left: 0;
-        right: auto;
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
       }
     }
   </style>
@@ -444,7 +361,6 @@
   <div class="page">
     <header class="nav">
       <div class="logo">Георгий Анисимов</div>
-
       <nav class="nav-links">
         <a href="#expertise">Компетенции</a>
         <a href="#experience">Опыт</a>
@@ -457,9 +373,7 @@
       <section class="hero">
         <div>
           <div class="eyebrow">Юрист · IP · Pharma · Compliance · LegalTech</div>
-
           <h1>Юрист для фармацевтического, медицинского и технологического бизнеса</h1>
-
           <p class="hero-text">
             Сопровождаю договорную, аналитическую и претензионно-исковую работу.
             Интересуюсь юридическими задачами на стыке интеллектуальной собственности,
@@ -467,42 +381,30 @@
           </p>
 
           <div class="hero-actions">
-            <details class="contact-dropdown">
-              <summary class="button primary">Связаться</summary>
-              <div class="contact-menu">
-                <a href="mailto:georgy_anissimov@inbox.ru">Написать на почту</a>
-                <a href="https://t.me/garvltn" target="_blank">Написать в Telegram</a>
-              </div>
-            </details>
-
+            <a class="button primary" href="mailto:georgy_anissimov@inbox.ru">Связаться</a>
             <a class="button secondary" href="resume.pdf" target="_blank">Скачать резюме</a>
           </div>
         </div>
 
         <aside class="hero-card">
           <h2>Кратко</h2>
-
           <div class="facts">
             <div class="fact">
               <span>Опыт</span>
               <strong>3+ года юридической практики</strong>
             </div>
-
             <div class="fact">
               <span>Фокус</span>
               <strong>договоры, IP, compliance, споры, правовая аналитика</strong>
             </div>
-
             <div class="fact">
               <span>Образование</span>
               <strong>МГЮА, магистратура «Цифровое право»</strong>
             </div>
-
             <div class="fact">
               <span>Английский</span>
               <strong>C1 + квалификация переводчика в профессиональной коммуникации</strong>
             </div>
-
             <div class="fact">
               <span>Локация</span>
               <strong>Москва</strong>
@@ -513,7 +415,6 @@
 
       <section id="expertise">
         <h2 class="section-title">Ключевые компетенции</h2>
-
         <p class="section-lead">
           Мой профиль сочетает классическую юридическую работу для бизнеса с интересом к регулируемым
           отраслям, интеллектуальной собственности и LegalTech-инструментам.
@@ -655,7 +556,6 @@
 
       <section id="projects">
         <h2 class="section-title">Релевантная аналитика и проекты</h2>
-
         <p class="section-lead">
           Ниже – направления, которые могут быть особенно полезны для фармацевтических,
           медицинских, научно-производственных и технологических компаний.
@@ -725,7 +625,6 @@
       <section id="contact" class="highlight">
         <div>
           <h2>Открыт к юридическим позициям в pharma, medical business, IP, compliance и LegalTech</h2>
-
           <p>
             Готов обсудить позиции, связанные с договорной работой, сопровождением бизнеса,
             интеллектуальной собственностью, проверкой контрагентов, правовой аналитикой,
@@ -733,19 +632,12 @@
           </p>
         </div>
 
-        <details class="contact-dropdown">
-          <summary class="button">Написать</summary>
-          <div class="contact-menu">
-            <a href="mailto:georgy_anissimov@inbox.ru">Написать на почту</a>
-            <a href="https://t.me/garvltn" target="_blank">Написать в Telegram</a>
-          </div>
-        </details>
+        <a class="button" href="mailto:georgy_anissimov@inbox.ru">Написать</a>
       </section>
     </main>
 
     <footer>
       <div>© 2026 Георгий Анисимов</div>
-
       <div>
         <a href="mailto:georgy_anissimov@inbox.ru">georgy_anissimov@inbox.ru</a>
         ·
